@@ -257,7 +257,9 @@ export default function Home() {
         <div className="grid grid-cols-4 gap-8">
           {ART_ITEMS.map(({ images, name, slug }) => (
             <div key={slug} className="relative">
-              <Image src={images.main} alt={name} width={300} height={300} />
+              <Link href={`/${slug}`}>
+                <Image src={images.main} alt={name} width={300} height={300} />
+              </Link>
               <div className="absolute flex-col bottom-0 left-0 right-0 flex justify-center items-center">
                 <p className="mb-4">{name}</p>
                 <button className="btn w-3/4">Mint</button>
