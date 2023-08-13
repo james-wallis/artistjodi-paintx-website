@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%;
+    --foreground: 0 2% 76%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -43,5 +43,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .btn {
+    @apply bg-background text-foreground shadow-btn shadow-white inline-flex uppercase h-10 w-max items-center justify-center rounded-full px-8 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50;
   }
 }

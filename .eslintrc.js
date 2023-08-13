@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["@typescript-eslint", "no-relative-import-paths"],
+  plugins: ["@typescript-eslint", "no-relative-import-paths", "prettier"],
   extends: [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
