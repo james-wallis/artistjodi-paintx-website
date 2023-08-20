@@ -1,7 +1,7 @@
 "use client";
 
 export const GoToTopButton = () => (
-  <div className="fixed right-10 bottom-10 hidden md:flex flex-col items-center justify-center">
+  <div className="fixed right-5 md:right-10 bottom-10 flex flex-col items-center justify-center z-10">
     <button
       className="btn uppercase"
       onClick={() => {

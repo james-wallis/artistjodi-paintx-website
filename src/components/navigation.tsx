@@ -16,16 +16,16 @@ export const Navigation = () => {
     <NavigationMenu>
       <NavigationMenuList className="gap-4">
         <NavigationMenuItem>
-          <Link href="https://artistjodi.com" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerClassName()}>
-              ArtistJodi.com
+              Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="https://artistjodi.com" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerClassName()}>
-              Collection
+              ArtistJodi.com
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

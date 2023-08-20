@@ -5,10 +5,12 @@ interface BlendBackgroundProps {
 }
 
 export const BlendBackground = ({ className }: BlendBackgroundProps) => (
-  <div
-    className={cn(
-      "bg-blend-shadow left-0 right-0 -z-10 bg-center aspect-square absolute bg-cover",
-      className,
-    )}
-  />
+  <div className="w-full overflow-visible left-0 right-0 -z-10 absolute max-w-full">
+    <div
+      className={cn(
+        "bg-blend-shadow  bg-center aspect-square  bg-cover scale-150 sm:scale-125 md:scale-0",
+        className,
+      )}
+    />
+  </div>
 );

@@ -20,18 +20,20 @@ import QualityStatement from "@/assets/quality-statement.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 w-full max-w-6xl mx-auto font-light">
+    <main className="flex min-h-screen flex-col items-center py-24 px-4 md:p-24 w-full max-w-6xl mx-auto font-light overflow-x-hidden">
       <GoToTopButton />
 
-      <Image
-        src={TopPic}
-        alt="opened digital art box"
-        className="absolute -top-64 left-0 right-0 -z-[8]"
-        width={1500}
-      />
+      <div className="overflow-hidden absolute top-10 md:-top-64 left-0 right-0 -z-[8] ">
+        <Image
+          src={TopPic}
+          alt="opened digital art box"
+          className="scale-[2] md:scale-0"
+          width={1500}
+        />
+      </div>
 
-      <section className="text-2xl font-medium text-center flex flex-col w-full mt-44 mb-20 relative">
-        <BlendBackground className="-top-32" />
+      <section className="text-xl md:text-2xl font-medium text-center flex flex-col w-full mt-44 mb-10 md:mb-20 relative">
+        <BlendBackground className="top-10 md:-top-32" />
         <Image
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
@@ -43,7 +45,7 @@ export default function Home() {
           <p>A fusion of creativity and cutting-edge technology.</p>
           <p>Embrace the Future of Art & NFTs.</p>
         </div>
-        <div className="grid grid-cols-4 gap-8 my-8 text-base">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-8 text-base">
           {ART_ITEMS.slice(0, 4).map(({ images, name, slug }) => (
             <div key={slug} className="relative">
               <Link href={`/${slug}`}>
@@ -52,20 +54,20 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="flex w-full justify-between mb-4 mt-8 items-end">
-          <div className="uppercase text-left">
+        <div className="flex w-full flex-col md:flex-row items-center justify-between mb-4 mt-8 md:items-end gap-y-4 md:gap-y-0">
+          <div className="uppercase text-center md:text-left flex flex-col ">
             <p>PaintX NFT Genesis Collection</p>
             <p>Mint is live 3 Sept 2022 Time: 12.00AM</p>
           </div>
           <button className="btn">COLLECTION</button>
         </div>
-        <div className="mt-4 mb-8 self-start flex justify-between w-full">
+        <div className="mt-4 mb-8 self-start flex flex-col-reverse md:flex-row gap-y-4 md:gap-y-0 items-center md:justify-between w-full">
           <button className="btn">Next drop waitlist</button>
           <p>24 x 1/1</p>
         </div>
       </section>
-      <Blockchain className="w-screen" />
-      <section className="my-20 text-center font-light relative">
+      <Blockchain className="w-screen scale-150 md:scale-0" />
+      <section className="my-10 md:my-20 text-center font-light relative">
         <BlendBackground className="top-28" />
         <Image
           src={PaintXCollectionByArtistJodi}
@@ -84,7 +86,7 @@ export default function Home() {
           artistic vision and craftsmanship behind each stroke.
         </p>
         <div className="justify-between flex flex-col-reverse md:flex-row my-20 w-full gap-4 items-center">
-          <div className="text-left">
+          <div className="text-center md:text-left">
             <p className="font-medium text-lg mb-4">What&apos;s in the box</p>
             <ul className="space-y-2">
               <li>Original Work on Canvas (serial numbered and NFC* tagged)</li>
@@ -94,14 +96,14 @@ export default function Home() {
               <p>Cotton gloves</p>
               <p>ArtLevel Hanging Kit and instructions</p>
             </ul>
-            <Link href="/artlevel" className="btn mt-4">
+            {/* <Link href="/artlevel" className="btn mt-4">
               ARTLEVEL
-            </Link>
+            </Link> */}
           </div>
           <Image
             src={Packaging}
             alt="Example packaging"
-            className="md:w-2/3 xl:w-3/5 pl-32"
+            className="md:w-2/3 xl:w-3/5 md:pl-32"
           />
         </div>
 
@@ -109,7 +111,7 @@ export default function Home() {
           The 1/1 digital assets - via unlockable content, viewable by the owner
           of the NFT
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 justify-center h-64">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center md:h-64">
           <div className="h-full flex flex-col justify-end items-center">
             <Image
               className="justify-self-center"
@@ -161,13 +163,13 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="text-left my-20 relative">
-        <BlendBackground className="-top-20" />
+      <section className="text-left my-10 md:my-20 relative">
+        <BlendBackground className="top-48 md:-top-20" />
         <h3 className="font-medium text-center text-xl mb-8">
           Connecting the physical and digital
         </h3>
-        <div className="flex justify-between items-center w-full">
-          <div className="w-1/3 space-y-4">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full">
+          <div className="w-full md:w-1/3 space-y-4">
             <p>
               The artwork is paired with a digital twin, as a Non-Fungible Token
               (NFT) on the Ethereum blockchain.
@@ -185,10 +187,11 @@ export default function Home() {
 
             <p>*Near Field Communication</p>
           </div>
-          <div className="flex justify-between grow w-2/3">
+          <div className="flex justify-between flex-col md:flex-row grow w-full md:w-2/3 mt-4 md:mt-0">
             <Image
               src={ConnectingPhysicalAndDigital1}
               alt="NFT diagrams 1"
+              className="hidden md:show"
               width={250}
             />
             <Image
@@ -199,7 +202,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Blockchain className="w-screen" />
+      <Blockchain className="w-screen scale-150 md:scale-0" />
 
       {/* <section className="my-20 grid grid-cols-2 md:grid-cols-4 w-full gap-8">
         <div className="rounded-lg bg-gray-400 w-full h-48 flex justify-center items-center">
@@ -216,14 +219,14 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="my-20 relative overflow-y-visible">
-        <BlendBackground className="-top-36" />
+      <section className="my-10 md:my-20 relative overflow-y-visible">
+        <BlendBackground className="top-48 md:-top-36" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8">
-          <div className="flex justify-start flex-col items-start space-y-4 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-0">
+          <div className="flex items-center justify-start flex-col md:items-start space-y-4 md:col-span-2">
             <Image src={ArtistJodi} alt="ArtistJodi" width={100} height={100} />
             <p className="text-lg font-medium">ArtistJodi</p>
-            <div className="max-w-md flex flex-col">
+            <div className="max-w-md flex flex-col text-center md:text-left">
               <p>
                 Meet the artist behind the PaintX Genisis Collection. Each piece
                 tells a story, evoking emotion and imagination. With a style
@@ -233,13 +236,13 @@ export default function Home() {
               <Link
                 href="https://artistjodi.com/aboutjodi"
                 target="_blank"
-                className="btn mt-8 self-end"
+                className="btn mt-8 self-center md:self-end"
               >
                 About Jodi
               </Link>
             </div>
           </div>
-          <div className="flex justify-start flex-col items-start space-y-4">
+          <div className="flex justify-start flex-col items-center md:items-start space-y-4 mt-8 md:mt-0">
             <Image
               src={QualityStatement}
               alt="Quality Statement badge"
@@ -247,7 +250,7 @@ export default function Home() {
               height={100}
             />
             <p className="text-lg font-medium">Quality Statement</p>
-            <div>
+            <div className="text-center md:text-left">
               <p>
                 The artwork has been created by Jodi in her studio, using the
                 finest quality materials:
@@ -266,12 +269,12 @@ export default function Home() {
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
           width={300}
-          className="my-10 mx-auto"
+          className="my-10 mt-20 mx-auto"
         />
       </section>
 
       <section>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {ART_ITEMS.map(({ images, name, slug }) => (
             <div key={slug} className="relative">
               <Link href={`/${slug}`}>

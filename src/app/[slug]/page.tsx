@@ -14,7 +14,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const { name, images, description, id } = item;
 
   return (
-    <main className="max-w-2xl mx-auto mb-20 mt-6 relative">
+    <main className="max-w-2xl mx-auto mb-20 mt-16 md:mt-6 relative">
       <Image
         src={LogoTag}
         alt="ArtistJodi logo tag"
@@ -22,14 +22,14 @@ export default function Page({ params }: { params: { slug: string } }) {
         width={150}
       />
       <Image src={images.main} alt={name} height={1000} />
-      <section className="flex w-full -mt-80 items-center">
-        <div className="w-1/2">
+      <section className="flex w-full -mt-40 md:-mt-80 items-center flex-col md:flex-row px-2 md:px-0">
+        <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl mb-2 text-white">{name}</h1>
           <h2 className="text-3xl mb-4">#{id}</h2>
           <p className="text-xl mb-4">30cm x 30cm x 3cm</p>
           <p>{description}</p>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <Image src={images.other2} alt={`${name} small`} width={400} />
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <p>3D Digital twins metaverse and AR Ready</p>
         </div>
       </section>
-      <section className="text-center my-20 text-sm">
+      <section className="text-center my-20 text-sm px-2 md:px-0">
         <p>{`"${name}" original work was painted June 2023 by ArtistJodi in the
         United Kingdom`}</p>
         <p>© All rights reserved</p>
