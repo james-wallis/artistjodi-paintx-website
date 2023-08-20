@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { BlendBackground } from "@/components/blend-background";
 import { Blockchain } from "@/components/blockchain";
+import { GoToTopButton } from "@/components/go-to-top-button";
 
 import TopPic from "@/assets/TopPic.png";
 import ArtistJodi from "@/assets/artistjodi.png";
@@ -20,10 +21,12 @@ import QualityStatement from "@/assets/quality-statement.png";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24 w-full max-w-6xl mx-auto font-light">
+      <GoToTopButton />
+
       <Image
         src={TopPic}
         alt="opened digital art box"
-        className="absolute -top-96 left-0 right-0 -z-[8]"
+        className="absolute -top-64 left-0 right-0 -z-[8]"
         width={1500}
       />
 
@@ -35,21 +38,30 @@ export default function Home() {
           width={500}
           className="mb-10 mx-auto"
         />
-        <h1>Welcome to PaintX</h1>
-        <p>A fusion of creativity and cutting-edge technology.</p>
-        <p>Embrace the Future of Art & NFTs.</p>
-        <div className="flex justify-center items-center w-full h-96">
-          CAROUSEL
+        <div className="my-8">
+          <h1>Welcome to PaintX</h1>
+          <p>A fusion of creativity and cutting-edge technology.</p>
+          <p>Embrace the Future of Art & NFTs.</p>
         </div>
-        <div className="flex w-full justify-between my-8">
+        <div className="grid grid-cols-4 gap-8 my-8 text-base">
+          {ART_ITEMS.slice(0, 4).map(({ images, name, slug }) => (
+            <div key={slug} className="relative">
+              <Link href={`/${slug}`}>
+                <Image src={images.main} alt={name} width={300} height={300} />
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="flex w-full justify-between mb-4 mt-8 items-end">
           <div className="uppercase text-left">
             <p>PaintX NFT Genesis Collection</p>
             <p>Mint is live 3 Sept 2022 Time: 12.00AM</p>
           </div>
           <button className="btn">COLLECTION</button>
         </div>
-        <div className="my-8 self-start">
+        <div className="mt-4 mb-8 self-start flex justify-between w-full">
           <button className="btn">Next drop waitlist</button>
+          <p>24 x 1/1</p>
         </div>
       </section>
       <Blockchain className="w-screen" />
@@ -188,7 +200,8 @@ export default function Home() {
         </div>
       </section>
       <Blockchain className="w-screen" />
-      <section className="my-20 grid grid-cols-2 md:grid-cols-4 w-full gap-8">
+
+      {/* <section className="my-20 grid grid-cols-2 md:grid-cols-4 w-full gap-8">
         <div className="rounded-lg bg-gray-400 w-full h-48 flex justify-center items-center">
           Placeholder
         </div>
@@ -201,7 +214,7 @@ export default function Home() {
         <div className="rounded-lg bg-gray-400 w-full h-48 flex justify-center items-center">
           Placeholder
         </div>
-      </section>
+      </section> */}
 
       <section className="my-20 relative overflow-y-visible">
         <BlendBackground className="-top-36" />
@@ -217,7 +230,11 @@ export default function Home() {
                 ranging from smooth to heavily textured, digital and physical,
                 no two ArtistJodi pieces are the same.
               </p>
-              <Link href="https://artistjodi.com" className="btn mt-8 self-end">
+              <Link
+                href="https://artistjodi.com/aboutjodi"
+                target="_blank"
+                className="btn mt-8 self-end"
+              >
                 About Jodi
               </Link>
             </div>
@@ -261,8 +278,8 @@ export default function Home() {
                 <Image src={images.main} alt={name} width={300} height={300} />
               </Link>
               <div className="absolute flex-col bottom-0 left-0 right-0 flex justify-center items-center">
-                <p className="mb-4">{name}</p>
-                <button className="btn w-3/4">Mint</button>
+                <p className="mb-16 font-normal text-white">{name}</p>
+                {/* <button className="btn w-3/4">Mint</button> */}
               </div>
             </div>
           ))}

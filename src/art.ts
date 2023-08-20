@@ -1,5 +1,25 @@
 import { StaticImageData } from "next/image";
 
+import Bitcoin11 from "@/assets/art/BITCOIN1/1.png";
+import Bitcoin12 from "@/assets/art/BITCOIN1/2.png";
+import Bitcoin13 from "@/assets/art/BITCOIN1/3.png";
+import Bitcoin14 from "@/assets/art/BITCOIN1/4.png";
+import Bitcoin21 from "@/assets/art/BITCOIN2/1.png";
+import Bitcoin22 from "@/assets/art/BITCOIN2/2.png";
+import Bitcoin23 from "@/assets/art/BITCOIN2/3.png";
+import Bitcoin24 from "@/assets/art/BITCOIN2/4.png";
+import Blockchain1 from "@/assets/art/BLOCK/1.png";
+import Blockchain2 from "@/assets/art/BLOCK/2.png";
+import Blockchain3 from "@/assets/art/BLOCK/3.png";
+import Blockchain4 from "@/assets/art/BLOCK/4.png";
+import Blush1 from "@/assets/art/BLUSH/1.png";
+import Blush2 from "@/assets/art/BLUSH/2.png";
+import Blush3 from "@/assets/art/BLUSH/3.png";
+import Blush4 from "@/assets/art/BLUSH/4.png";
+import BrownBay1 from "@/assets/art/BROWNBAY/1.png";
+import BrownBay2 from "@/assets/art/BROWNBAY/2.png";
+import BrownBay3 from "@/assets/art/BROWNBAY/3.png";
+import BrownBay4 from "@/assets/art/BROWNBAY/4.png";
 import BlueBay1 from "@/assets/art/BlueBay/1.png";
 import BlueBay2 from "@/assets/art/BlueBay/2.png";
 import BlueBay3 from "@/assets/art/BlueBay/3.png";
@@ -12,6 +32,10 @@ import ChromaBurst1 from "@/assets/art/CHROMA/1.png";
 import ChromaBurst2 from "@/assets/art/CHROMA/2.png";
 import ChromaBurst3 from "@/assets/art/CHROMA/3.png";
 import ChromaBurst4 from "@/assets/art/CHROMA/4.png";
+import Concrete1 from "@/assets/art/CONCRETE/1.png";
+import Concrete2 from "@/assets/art/CONCRETE/2.png";
+import Concrete3 from "@/assets/art/CONCRETE/3.png";
+import Concrete4 from "@/assets/art/CONCRETE/4.png";
 import DriftsOfAmethyst1 from "@/assets/art/DRIFTS/1.png";
 import DriftsOfAmethyst2 from "@/assets/art/DRIFTS/2.png";
 import DriftsOfAmethyst3 from "@/assets/art/DRIFTS/3.png";
@@ -20,6 +44,10 @@ import EmberGlimmer1 from "@/assets/art/EMBER/1.png";
 import EmberGlimmer2 from "@/assets/art/EMBER/2.png";
 import EmberGlimmer3 from "@/assets/art/EMBER/3.png";
 import EmberGlimmer4 from "@/assets/art/EMBER/4.png";
+import Ethereum1 from "@/assets/art/Eth/1.png";
+import Ethereum2 from "@/assets/art/Eth/2.png";
+import Ethereum3 from "@/assets/art/Eth/3.png";
+import Ethereum4 from "@/assets/art/Eth/4.png";
 import FlowingSandscape1 from "@/assets/art/FLOWING/1.png";
 import FlowingSandscape2 from "@/assets/art/FLOWING/2.png";
 import FlowingSandscape3 from "@/assets/art/FLOWING/3.png";
@@ -32,6 +60,18 @@ import GreenJourney1 from "@/assets/art/GREEN_JOYRNEY/1.png";
 import GreenJourney2 from "@/assets/art/GREEN_JOYRNEY/2.png";
 import GreenJourney3 from "@/assets/art/GREEN_JOYRNEY/3.png";
 import GreenJourney4 from "@/assets/art/GREEN_JOYRNEY/4.png";
+import InnerCore1 from "@/assets/art/INNERCORE/1.png";
+import InnerCore2 from "@/assets/art/INNERCORE/2.png";
+import InnerCore3 from "@/assets/art/INNERCORE/3.png";
+import InnerCore4 from "@/assets/art/INNERCORE/4.png";
+import Irrid1 from "@/assets/art/IRRID/1.png";
+import Irrid2 from "@/assets/art/IRRID/2.png";
+import Irrid3 from "@/assets/art/IRRID/3.png";
+import Irrid4 from "@/assets/art/IRRID/4.png";
+import Nodes1 from "@/assets/art/NODES/1.png";
+import Nodes2 from "@/assets/art/NODES/2.png";
+import Nodes3 from "@/assets/art/NODES/3.png";
+import Nodes4 from "@/assets/art/NODES/4.png";
 import Opensea1 from "@/assets/art/OPENSEA/1.png";
 import Opensea2 from "@/assets/art/OPENSEA/2.png";
 import Opensea3 from "@/assets/art/OPENSEA/3.png";
@@ -40,6 +80,10 @@ import ShorelineImpasto1 from "@/assets/art/SHORE/1.png";
 import ShorelineImpasto2 from "@/assets/art/SHORE/2.png";
 import ShorelineImpasto3 from "@/assets/art/SHORE/3.png";
 import ShorelineImpasto4 from "@/assets/art/SHORE/4.png";
+import SWIRL1 from "@/assets/art/SWIRL/1.png";
+import SWIRL2 from "@/assets/art/SWIRL/2.png";
+import SWIRL3 from "@/assets/art/SWIRL/3.png";
+import SWIRL4 from "@/assets/art/SWIRL/4.png";
 import TactileSerenity1 from "@/assets/art/TACT/1.png";
 import TactileSerenity2 from "@/assets/art/TACT/2.png";
 import TactileSerenity3 from "@/assets/art/TACT/3.png";
@@ -48,6 +92,10 @@ import RedHorizon1 from "@/assets/art/redhorizon/1.png";
 import RedHorizon2 from "@/assets/art/redhorizon/2.png";
 import RedHorizon3 from "@/assets/art/redhorizon/3.png";
 import RedHorizon4 from "@/assets/art/redhorizon/4.png";
+import Technicolour1 from "@/assets/art/technicolour/1.png";
+import Technicolour2 from "@/assets/art/technicolour/2.png";
+import Technicolour3 from "@/assets/art/technicolour/3.png";
+import Technicolour4 from "@/assets/art/technicolour/4.png";
 
 interface ArtItem {
   slug: string;
@@ -217,6 +265,162 @@ export const ART_ITEMS: ArtItem[] = [
       other1: FlowingSandscape2,
       other2: FlowingSandscape3,
       other3: FlowingSandscape4,
+    },
+  },
+  {
+    name: "Brown Bay",
+    slug: "brown-bay",
+    description:
+      "Brown Bay captures a distant vista, where earth tones dominate the canvas, resulting in a serene elegance. Accents of gold, green, and blue pearlescent breathe life into the scene, infusing it with a subtle touch of magic. The painting unveils a tranquil bay, inviting you to immerse yourself in the calming embrace of nature’s warm palette. Savour the serenity of this picturesque moment.",
+    id: 7719057,
+    images: {
+      main: BrownBay1,
+      other1: BrownBay2,
+      other2: BrownBay3,
+      other3: BrownBay4,
+    },
+  },
+  {
+    name: "Bitcoin #1",
+    slug: "bitcoin-1",
+    description:
+      "Bitcoin#1 captivates, with its sand-textured backdrop and a smooth pearlescent gold Bitcoin elegantly embossed into the centre. The coin emerges with prominence, as if sculpted in stone, symbolising its enduring significance. This piece captures the essence of the world of cryptocurrency, where innovation and technology converge to redefine the global financial landscape.",
+    id: 7719050,
+    images: {
+      main: Bitcoin11,
+      other1: Bitcoin12,
+      other2: Bitcoin13,
+      other3: Bitcoin14,
+    },
+  },
+  {
+    name: "Bitcoin #2",
+    slug: "bitcoin-2",
+    description:
+      "Bitcoin#2 is a mesmerising abstract piece with a sand-textured backdrop. In one corner, a smooth pearlescent gold Bitcoin emerges, with only a fraction of the coin visible. This artful composition exudes a sense of mystery and intrigue, hinting at the enigmatic world of cryptocurrency. As the sand-textured canvas beckons you to explore its depths, the golden Bitcoin glimmers like a treasure waiting to be discovered.",
+    id: 7719052,
+    images: {
+      main: Bitcoin21,
+      other1: Bitcoin22,
+      other2: Bitcoin23,
+      other3: Bitcoin24,
+    },
+  },
+  {
+    name: "Ethereum",
+    slug: "ethereum",
+    description:
+      "This captivating 3D texture painting pays homage to the innovative spirit of blockchain technology. Each textured stroke enlivens the iconic logo, symbolising the essence of this transformative cryptocurrency. This artful tribute invites you to explore the decentralised digital realm it represents.",
+    id: 7719037,
+    images: {
+      main: Ethereum1,
+      other1: Ethereum2,
+      other2: Ethereum3,
+      other3: Ethereum4,
+    },
+  },
+  {
+    name: "Blush of Humanity",
+    slug: "blush-of-humanity",
+    description:
+      "A captivating pink abstract artwork, adorned with diverse textures and enigmatic figures. Emphatic with emotion, each texture weaves a unique tale. This piece celebrates the beauty and complexity that lies within us all, leaving an indelible impression on you.",
+    id: 7719045,
+    images: {
+      main: Blush1,
+      other1: Blush2,
+      other2: Blush3,
+      other3: Blush4,
+    },
+  },
+  {
+    name: "Blockchain",
+    slug: "blockchain",
+    description:
+      "Blockchain is a textured purple artwork with hints of gold and blue pearlescent. The 3D elements build depth, symbolising the complexity of blockchain technology. As light dances upon its surface, the artwork transforms, capturing the essence of a dynamic digital world.",
+    id: 7719041,
+    images: {
+      main: Blockchain1,
+      other1: Blockchain2,
+      other2: Blockchain3,
+      other3: Blockchain4,
+    },
+  },
+  {
+    name: "Technicolour",
+    slug: "technicolour",
+    description:
+      "A vibrant flash of colours against a deep blue textured backdrop. The burst of hues creates an electrifying spectacle that ignites the canvas with energy. This artwork draws you into a world of vivid expression, where each colour sparks a symphony of emotions. “Technicolour” invites viewers to revel in the enchantment of an ever-changing kaleidoscope, embracing the beauty of boundless creativity.",
+    id: 7719036,
+    images: {
+      main: Technicolour1,
+      other1: Technicolour2,
+      other2: Technicolour3,
+      other3: Technicolour4,
+    },
+  },
+  {
+    name: "Iridescent Inception",
+    slug: "iridescent-inception",
+    description:
+      "A captivating textured piece, evoking a lush and mysterious landscape. Amidst the vibrant greens, a mesmerising window reveals a smooth, pearlescent portal to a new realm. This artwork is a testament to the limitless possibilities of art, as it sparks wonder and contemplation, inviting us to venture into the depths of its iridescent inception.",
+    id: 7719044,
+    images: {
+      main: Irrid1,
+      other1: Irrid2,
+      other2: Irrid3,
+      other3: Irrid4,
+    },
+  },
+  {
+    name: "Inner Core",
+    slug: "inner-core",
+    description:
+      "This piece explodes with heavy texture that mirrors the intensity of raw energy and power, capturing the very essence of a cosmic event. With its dynamic and dramatic display, it beckons you to venture into the heart of creation, where chaos and beauty collide.",
+    id: 7719059,
+    images: {
+      main: InnerCore1,
+      other1: InnerCore2,
+      other2: InnerCore3,
+      other3: InnerCore4,
+    },
+  },
+  {
+    name: "Concrete Metropolis",
+    slug: "concrete-metropolis",
+    description:
+      "Concrete Metropolis is an abstract work capturing the essence of a modern cityscape through intentional palette knife strokes, texture and dynamism. Each layer of colour breathes life into the concrete structures, whilst the opulent metallic and pearlescent accents make this artwork a captivating portrayal of the vibrant city life.",
+    id: 7719035,
+    images: {
+      main: Concrete1,
+      other1: Concrete2,
+      other2: Concrete3,
+      other3: Concrete4,
+    },
+  },
+  {
+    name: "Nodes",
+    slug: "nodes",
+    description:
+      "Nodes conjures an exploration of contrast, intertwining shades of grey and black with dynamic paint splashes. The canvas comes alive with a mesmerising interplay, as each splash forms intricate nodes of creativity. Traverse the captivating patterns, and lose yourself in the motion and rhythm amidst the monochromatic symphony.",
+    id: 7719048,
+    images: {
+      main: Nodes1,
+      other1: Nodes2,
+      other2: Nodes3,
+      other3: Nodes4,
+    },
+  },
+  {
+    name: "Swirling Iridescence",
+    slug: "swirling-iridescence",
+    description:
+      "Swirling Iridescence boasts rich texture, and is adorned with dynamic gold pearlescent hues that dance in the light. The ever-changing iridescence captivated you in its visual symphony. Each stroke weaves a tale of mystery and wonder as the painting breathes life into its own mystical narrative, leaving you in awe of its shimmering allure.",
+    id: 7719046,
+    images: {
+      main: SWIRL1,
+      other1: SWIRL2,
+      other2: SWIRL3,
+      other3: SWIRL4,
     },
   },
 ];

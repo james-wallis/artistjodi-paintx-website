@@ -18,7 +18,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <Image
         src={LogoTag}
         alt="ArtistJodi logo tag"
-        className="absolute -top-8 -left-6"
+        className="absolute -top-8 right-4"
         width={150}
       />
       <Image src={images.main} alt={name} height={1000} />

@@ -16,7 +16,7 @@ export const Navigation = () => {
     <NavigationMenu>
       <NavigationMenuList className="gap-4">
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="https://artistjodi.com" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerClassName()}>
               ArtistJodi.com
             </NavigationMenuLink>
