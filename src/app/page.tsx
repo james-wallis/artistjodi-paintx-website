@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import { BlendBackground } from "@/components/blend-background";
 import { Blockchain } from "@/components/blockchain";
-import { Carousel } from "@/components/carousel";
 import { GoToTopButton } from "@/components/go-to-top-button";
 
 import TopPic from "@/assets/TopPic.png";
