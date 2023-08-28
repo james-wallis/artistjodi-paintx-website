@@ -4,7 +4,7 @@ interface BlockchainProps {
 
 export const Blockchain = ({ className }: BlockchainProps) => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-visible z-10">
       <svg
         width="2130"
         height="129.415"
@@ -12,7 +12,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
         className={className}
       >
         <defs>
-          <clipPath id="clip-path">
+          <clipPath id="clipPath">
             <rect
               id="Rectangle_62"
               data-name="Rectangle 62"
@@ -21,7 +21,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
               fill="none"
             />
           </clipPath>
-          <clipPath id="clip-path-2">
+          <clipPath id="clipPath-2">
             <rect
               id="Rectangle_65"
               data-name="Rectangle 65"
@@ -47,11 +47,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
               data-name="Group 114"
               transform="translate(-17 2412.361)"
             >
-              <g
-                id="Group_113"
-                data-name="Group 113"
-                clip-path="url(#clip-path)"
-              >
+              <g id="Group_113" data-name="Group 113" clipPath="url(#clipPath)">
                 <path
                   id="Path_109"
                   data-name="Path 109"
@@ -59,7 +55,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(317.859 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_110"
@@ -68,7 +64,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(317.858 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_1"
@@ -77,7 +73,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(460.125 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_111"
@@ -86,7 +82,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(474.387 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_112"
@@ -95,7 +91,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(474.386 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_2"
@@ -104,7 +100,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(660.247 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_113"
@@ -113,7 +109,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(161.293 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_114"
@@ -122,7 +118,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(161.292 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_3"
@@ -131,7 +127,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(259.955 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_115"
@@ -140,7 +136,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(1.796 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_116"
@@ -149,7 +145,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(1.795 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_4"
@@ -158,7 +154,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(56.038 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_117"
@@ -354,7 +350,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
               <g
                 id="Group_116"
                 data-name="Group 116"
-                clip-path="url(#clip-path-2)"
+                clipPath="url(#clipPath-2)"
               >
                 <path
                   id="Path_133"
@@ -363,7 +359,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-14.066 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_134"
@@ -372,7 +368,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-14.067 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_5"
@@ -381,7 +377,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(259.954 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_135"
@@ -390,7 +386,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-173.563 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_136"
@@ -399,7 +395,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-173.563 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_6"
@@ -408,7 +404,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(56.037 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_137"
@@ -482,7 +478,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
               <g
                 id="Group_113-2"
                 data-name="Group 113"
-                clip-path="url(#clip-path)"
+                clipPath="url(#clipPath)"
               >
                 <path
                   id="Path_109-2"
@@ -491,7 +487,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(317.859 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_110-2"
@@ -500,7 +496,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(317.858 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_1-2"
@@ -509,7 +505,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(460.125 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_111-2"
@@ -518,7 +514,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(474.387 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_112-2"
@@ -527,7 +523,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(474.386 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_2-2"
@@ -536,7 +532,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(660.247 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_113-2"
@@ -545,7 +541,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(161.293 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_114-2"
@@ -554,7 +550,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(161.292 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_3-2"
@@ -563,7 +559,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(259.955 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_115-2"
@@ -572,7 +568,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(1.796 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_116-2"
@@ -581,7 +577,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(1.795 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_4-2"
@@ -590,7 +586,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(56.038 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_117-2"
@@ -786,7 +782,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
               <g
                 id="Group_116-2"
                 data-name="Group 116"
-                clip-path="url(#clip-path-2)"
+                clipPath="url(#clipPath-2)"
               >
                 <path
                   id="Path_133-2"
@@ -795,7 +791,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-14.066 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_134-2"
@@ -804,7 +800,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-14.067 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_5-2"
@@ -813,7 +809,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(259.954 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_135-2"
@@ -822,7 +818,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-173.563 -95.189)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_136-2"
@@ -831,7 +827,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(-173.563 -70.92)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <line
                   id="Line_6-2"
@@ -840,7 +836,7 @@ export const Blockchain = ({ className }: BlockchainProps) => {
                   transform="translate(56.037 64.708)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_137-2"

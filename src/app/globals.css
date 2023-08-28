@@ -48,4 +48,8 @@
   .btn {
     @apply bg-background text-foreground shadow-btn shadow-white inline-flex uppercase h-9 md:h-10 w-max items-center justify-center rounded-full px-6 md:px-8 py-1 md:py-2 text-xs md:text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50;
   }
+
+  .gutter {
+    @apply px-4 sm:px-4 md:px-20 lg:px-36 xl:px-48 2xl:px-80;
+  }
 }

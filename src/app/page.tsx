@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { BlendBackground } from "@/components/blend-background";
 import { Blockchain } from "@/components/blockchain";
+import { Carousel } from "@/components/carousel";
 import { GoToTopButton } from "@/components/go-to-top-button";
 
 import TopPic from "@/assets/TopPic.png";
@@ -20,25 +21,24 @@ import QualityStatement from "@/assets/quality-statement.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center py-24 px-4 md:p-24 w-full max-w-6xl mx-auto font-light overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center py-24 md:py-24 w-full mx-auto font-light overflow-x-hidden">
       <GoToTopButton />
 
       <div className="overflow-hidden absolute top-10 md:-top-64 left-0 right-0 -z-[8] ">
         <Image
           src={TopPic}
           alt="opened digital art box"
-          className="scale-[2] md:scale-0"
-          width={1500}
+          className="scale-[2] md:scale-100"
         />
       </div>
 
-      <section className="text-xl md:text-2xl font-medium text-center flex flex-col w-full mt-44 mb-10 md:mb-20 relative">
+      <section className="text-xl md:text-2xl font-medium text-center flex flex-col w-full mt-16 md:mt-44 mb-10 md:mb-20 relative gutter">
         <BlendBackground className="top-10 md:-top-32" />
         <Image
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
           width={500}
-          className="mb-10 mx-auto"
+          className="mb-6 md:mb-10 mx-auto"
         />
         <div className="my-8">
           <h1>Welcome to PaintX</h1>
@@ -54,6 +54,7 @@ export default function Home() {
             </div>
           ))}
         </div>
+        {/* <Carousel /> */}
         <div className="flex w-full flex-col md:flex-row items-center justify-between mb-4 mt-8 md:items-end gap-y-4 md:gap-y-0">
           <div className="uppercase text-center md:text-left flex flex-col ">
             <p>PaintX NFT Genesis Collection</p>
@@ -66,8 +67,8 @@ export default function Home() {
           <p>24 x 1/1</p>
         </div>
       </section>
-      <Blockchain className="w-screen scale-150 md:scale-0" />
-      <section className="my-10 md:my-20 text-center font-light relative">
+      <Blockchain className="w-screen scale-150 md:scale-100" />
+      <section className="my-4 md:my-12 text-center font-light relative gutter">
         <BlendBackground className="top-28" />
         <Image
           src={PaintXCollectionByArtistJodi}
@@ -85,7 +86,7 @@ export default function Home() {
           Each touch becomes a moment of connection, a tangible link to the
           artistic vision and craftsmanship behind each stroke.
         </p>
-        <div className="justify-between flex flex-col-reverse md:flex-row my-20 w-full gap-4 items-center">
+        <div className="justify-between flex flex-col-reverse md:flex-row my-12 w-full gap-4 items-center">
           <div className="text-center md:text-left">
             <p className="font-medium text-lg mb-4">What&apos;s in the box</p>
             <ul className="space-y-2">
@@ -130,7 +131,7 @@ export default function Home() {
               src={DigitalAsset2}
               alt="Lower resolution scan"
             />
-            <p className="h-20 mt-4">Lower resolution jpeg</p>
+            <p className="h-10 md:h-20 mt-4">Lower resolution jpeg</p>
           </div>
 
           <div className="h-full flex flex-col justify-end items-center">
@@ -139,7 +140,7 @@ export default function Home() {
               src={DigitalAsset3}
               alt="Painting in the box"
             />
-            <div className="h-20 mt-4">
+            <div className="h-10 md:h-20 mt-4">
               <p>Painting in the box</p>
               <p>3D glb twin and USDZ AR</p>
             </div>
@@ -151,7 +152,7 @@ export default function Home() {
               src={DigitalAsset4}
               alt="Painting 3D glb twin and usdz ar"
             />
-            <div className="h-20 mt-4">
+            <div className="h-10 md:h-20 mt-4">
               <p>Painting</p>
               <p>3D glb twin and USDZ AR</p>
             </div>
@@ -163,7 +164,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="text-left my-10 md:my-20 relative">
+      <section className="text-left my-6 md:my-12 relative gutter">
         <BlendBackground className="top-48 md:-top-20" />
         <h3 className="font-medium text-center text-xl mb-8">
           Connecting the physical and digital
@@ -202,9 +203,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Blockchain className="w-screen scale-150 md:scale-0" />
+      <Blockchain className="w-screen scale-150 md:scale-100" />
 
-      {/* <section className="my-20 grid grid-cols-2 md:grid-cols-4 w-full gap-8">
+      {/* <section className="my-12 grid grid-cols-2 md:grid-cols-4 w-full gap-8 gutter">
         <div className="rounded-lg bg-gray-400 w-full h-48 flex justify-center items-center">
           Placeholder
         </div>
@@ -219,8 +220,8 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="my-10 md:my-20 relative overflow-y-visible">
-        <BlendBackground className="top-48 md:-top-36" />
+      <section className="my-6 md:my-12 relative overflow-y-visible gutter">
+        <BlendBackground className="top-48 md:-top-30" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-0">
           <div className="flex items-center justify-start flex-col md:items-start space-y-4 md:col-span-2">
@@ -273,8 +274,8 @@ export default function Home() {
         />
       </section>
 
-      <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="gutter">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {ART_ITEMS.map(({ images, name, slug }) => (
             <div key={slug} className="relative">
               <Link href={`/${slug}`}>
