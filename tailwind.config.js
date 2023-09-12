@@ -76,6 +76,9 @@ module.exports = {
       boxShadow: {
         btn: "0px 0px 10px 1px rgba(255,255,255,0.4)",
       },
+      scale: {
+        200: "2",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

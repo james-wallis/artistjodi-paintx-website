@@ -23,7 +23,7 @@ export const Navigation = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/#collection" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerClassName()}>
               Collection
             </NavigationMenuLink>

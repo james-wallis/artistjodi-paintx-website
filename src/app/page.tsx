@@ -2,20 +2,22 @@ import { ART_ITEMS } from "@/art";
 import Image from "next/image";
 import Link from "next/link";
 
-import { BlendBackground } from "@/components/blend-background";
 import { Blockchain } from "@/components/blockchain";
 import { GoToTopButton } from "@/components/go-to-top-button";
+import { ScrollToIdButton } from "@/components/scrollToIdButton";
 
+import JodiSignature from "@/assets/JodiSig.png";
 import TopPic from "@/assets/TopPic.png";
+import XLogo from "@/assets/X.png";
 import ArtistJodi from "@/assets/artistjodi.png";
-import ConnectingPhysicalAndDigital2 from "@/assets/connecting-physical-digital-nft2.png";
-import ConnectingPhysicalAndDigital1 from "@/assets/connecting-pyhsical-digital-nft1.png";
+import ArtLevel from "@/assets/artlevel-logo.png";
 import DigitalAsset4 from "@/assets/digital-assets-3d-glb.png";
 import DigitalAsset1 from "@/assets/digital-assets-high-resolution.png";
 import DigitalAsset2 from "@/assets/digital-assets-lower-resolution.png";
 import DigitalAsset3 from "@/assets/digital-assets-painting-in-box.png";
 import Packaging from "@/assets/packaging.png";
 import PaintXCollectionByArtistJodi from "@/assets/paintx-collection-by-artistodi.png";
+import PhoneDiagram from "@/assets/phone2.png";
 import QualityStatement from "@/assets/quality-statement.png";
 
 export default function Home() {
@@ -32,7 +34,7 @@ export default function Home() {
       </div>
 
       <section className="text-xl md:text-2xl font-medium text-center flex flex-col w-full mt-16 md:mt-44 mb-10 md:mb-20 relative gutter">
-        <BlendBackground className="top-10 md:-top-32" />
+        {/* <BlendBackground className="top-10 md:-top-32" /> */}
         <Image
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
@@ -57,18 +59,18 @@ export default function Home() {
         <div className="flex w-full flex-col md:flex-row items-center justify-between mb-4 mt-8 md:items-end gap-y-4 md:gap-y-0">
           <div className="uppercase text-center md:text-left flex flex-col ">
             <p>PaintX NFT Genesis Collection</p>
-            <p>Mint is live 3 Sept 2022 Time: 12.00AM</p>
+            <p>Launching 1st Oct 2023</p>
           </div>
-          <button className="btn">COLLECTION</button>
+          <ScrollToIdButton id="collection">Collection</ScrollToIdButton>
         </div>
         <div className="mt-4 mb-8 self-start flex flex-col-reverse md:flex-row gap-y-4 md:gap-y-0 items-center md:justify-between w-full">
           <button className="btn">Next drop waitlist</button>
           <p>24 x 1/1</p>
         </div>
       </section>
-      <Blockchain className="w-screen scale-150 md:scale-100" />
+      <Blockchain className="w-screen scale-200 sm:scale-150 md:scale-100" />
       <section className="my-4 md:my-12 text-center font-light relative gutter">
-        <BlendBackground className="top-28" />
+        {/* <BlendBackground className="top-28" /> */}
         <Image
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
@@ -76,7 +78,7 @@ export default function Home() {
           className="my-10 mx-auto"
         />
         <h3 className="mb-8 font-medium text-xl">
-          The original work - shipped to the minter.
+          The original work - shipped to you.
         </h3>
         <p>Your journey begins as you unveil the curated gift box.</p>
         <p>
@@ -89,16 +91,22 @@ export default function Home() {
           <div className="text-center md:text-left">
             <p className="font-medium text-lg mb-4">What&apos;s in the box</p>
             <ul className="space-y-2">
-              <li>Original Work on Canvas (serial numbered and NFC* tagged)</li>
+              <li>
+                Original Work on Canvas
+                <br />
+                <span className="text-xs">
+                  (serial numbered and NFC* tagged)
+                </span>
+              </li>
               <li>Certificate with NFC tag</li>
               <li>Care information</li>
               <li>Hand embellished brochure</li>
               <p>Cotton gloves</p>
               <p>ArtLevel Hanging Kit and instructions</p>
             </ul>
-            {/* <Link href="/artlevel" className="btn mt-4">
-              ARTLEVEL
-            </Link> */}
+            <Link href="/artlevel" className="btn mt-4">
+              <Image src={ArtLevel} alt="Artlevel logo" width={150} />
+            </Link>
           </div>
           <Image
             src={Packaging}
@@ -107,11 +115,14 @@ export default function Home() {
           />
         </div>
 
-        <h3 className="font-medium text-xl mb-8 mt-20">
-          The 1/1 digital assets - via unlockable content, viewable by the owner
-          of the NFT
+        <h3 className="font-medium text-xl mb-2 mt-20">
+          With 1/1 digital assets included in the box and via download from
+          secure link
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center md:h-64">
+        <p className="mb-8">
+          The 3D models can be used in the metaverse and beyond
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center md:h-64 gap-4">
           <div className="h-full flex flex-col justify-end items-center">
             <Image
               className="justify-self-center"
@@ -157,14 +168,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <p className="w-full text-center md:text-right mt-4 text-sm text-gray-400 md:pr-20">
-          The 3D models can be used in the metaverse and beyond
-        </p>
       </section>
 
       <section className="text-left my-6 md:my-12 relative gutter">
-        <BlendBackground className="top-48 md:-top-20" />
+        {/* <BlendBackground className="top-48 md:-top-20" /> */}
         <h3 className="font-medium text-center text-xl mb-8">
           Connecting the physical and digital
         </h3>
@@ -187,7 +194,10 @@ export default function Home() {
 
             <p>*Near Field Communication</p>
           </div>
-          <div className="flex justify-between flex-col md:flex-row grow w-full md:w-2/3 mt-4 md:mt-0">
+          <div className="w-full md:w-2/3 flex justify-end">
+            <Image src={PhoneDiagram} alt="NFT diagrams 2" height={350} />
+          </div>
+          {/* <div className="flex justify-between flex-col md:flex-row grow w-full md:w-1/3 mt-4 md:mt-0">
             <Image
               src={ConnectingPhysicalAndDigital1}
               alt="NFT diagrams 1"
@@ -199,10 +209,10 @@ export default function Home() {
               alt="NFT diagrams 2"
               width={350}
             />
-          </div>
+          </div> */}
         </div>
       </section>
-      <Blockchain className="w-screen scale-150 md:scale-100" />
+      <Blockchain className="w-screen scale-200 sm:scale-150 md:scale-100" />
 
       {/* <section className="my-12 grid grid-cols-2 md:grid-cols-4 w-full gap-8 gutter">
         <div className="rounded-lg bg-gray-400 w-full h-48 flex justify-center items-center">
@@ -220,7 +230,7 @@ export default function Home() {
       </section> */}
 
       <section className="my-6 md:my-12 relative overflow-y-visible gutter">
-        <BlendBackground className="top-48 md:-top-30" />
+        {/* <BlendBackground className="top-48 md:-top-30" /> */}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-0">
           <div className="flex items-center justify-start flex-col md:items-start space-y-4 md:col-span-2">
@@ -255,25 +265,34 @@ export default function Home() {
                 The artwork has been created by Jodi in her studio, using the
                 finest quality materials:
               </p>
-              <ul>
-                <li>100% cotton canvas</li>
-                <li>Pine stretcher bar</li>
-                <li>Primed with gesso</li>
-                <li>Acrylic</li>
-                <li>Mixed media</li>
-              </ul>
+              <div className="flex flex-col md:flex-row items-center gap-2 md:justify-between">
+                <ul>
+                  <li>100% cotton canvas</li>
+                  <li>Pine stretcher bar</li>
+                  <li>Primed with gesso</li>
+                  <li>Acrylic</li>
+                  <li>Mixed media</li>
+                </ul>
+
+                <Image
+                  src={JodiSignature}
+                  alt="Jodi Signature"
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="gutter" id="collection">
         <Image
           src={PaintXCollectionByArtistJodi}
           alt="paintx brand logo"
           width={300}
-          className="my-10 mt-20 mx-auto"
+          className="my-20 mx-auto"
         />
-      </section>
-
-      <section className="gutter">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {ART_ITEMS.map(({ images, name, slug }) => (
             <div key={slug} className="relative">
@@ -282,12 +301,43 @@ export default function Home() {
               </Link>
               <div className="absolute flex-col bottom-0 left-0 right-0 flex justify-center items-center">
                 <p className="mb-16 font-normal text-white">{name}</p>
-                {/* <button className="btn w-3/4">Mint</button> */}
+                {/* <button className="btn w-3/4">Buy</button> */}
               </div>
             </div>
           ))}
         </div>
       </section>
+
+      <section className="gutter w-full mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 w-full py-6 pb-8 border-t border-b border-gray-300 gap-8 md:gap-2">
+          <div className="flex justify-center flex-col items-center md:items-start w-full h-full">
+            <Image
+              src={PaintXCollectionByArtistJodi}
+              alt="paintx brand logo"
+              width={250}
+            />
+            <Image src={ArtLevel} alt="Artlevel logo" width={150} />
+          </div>
+          <div className="flex justify-center items-center w-full h-full">
+            <Link href="https://twitter.com/artist_jodi" target="_blank">
+              <Image src={XLogo} alt="X logo" width={40} />
+            </Link>
+          </div>
+          <div className="flex justify-center md:justify-end items-center w-full h-full">
+            <Link href="https://artistjodi.com/" target="_blank">
+              <Image
+                src={JodiSignature}
+                alt="Jodi Signature"
+                width={100}
+                height={100}
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+      <p className="w-full text-left text-xs text-gray-300 gutter mt-8">
+        ©2023 ArtistJodi
+      </p>
     </main>
   );
 }

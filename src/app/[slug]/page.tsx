@@ -53,23 +53,18 @@ export default function Page({ params }: { params: { slug: string } }) {
               src={images.other3}
               alt={`${name} boxed with gloves`}
               width={350}
-              className="absolute -top-8 mx-auto"
+              className="mx-auto"
             />
           </div>
           <p>Physical Boxed Original</p>
         </div>
         <div className="flex flex-col relative h-64 w-full">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full flex items-center justify-end">
             <Image
               src={images.other2}
               alt={`${name} angled`}
-              width={250}
-              className="absolute -top-14 -right-10 z-[0]"
-            />
-            <Image
-              src={images.other1}
-              alt={`${name} box mockup`}
-              className="absolute -bottom-12 -left-3 z-[1]"
+              width={350}
+              className="z-[0]"
             />
           </div>
           <p>3D Digital twins metaverse and AR Ready</p>
