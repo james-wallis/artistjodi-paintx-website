@@ -17,7 +17,7 @@ import DigitalAsset2 from "@/assets/digital-assets-lower-resolution.png";
 import DigitalAsset3 from "@/assets/digital-assets-painting-in-box.png";
 import Packaging from "@/assets/packaging.png";
 import PaintXCollectionByArtistJodi from "@/assets/paintx-collection-by-artistodi.png";
-import PhoneDiagram from "@/assets/phone2.png";
+import PhoneDiagram from "@/assets/phonediagram.png";
 import QualityStatement from "@/assets/quality-statement.png";
 
 export default function Home() {
