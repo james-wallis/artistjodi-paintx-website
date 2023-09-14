@@ -6,7 +6,6 @@ import * as React from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerClassName,
 } from "@/components/ui/navigation-menu";
@@ -16,17 +15,19 @@ export const Navigation = () => {
     <NavigationMenu>
       <NavigationMenuList className="gap-4">
         <NavigationMenuItem>
-          <Link href="https://artistjodi.com" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerClassName()}>
-              AJ Home
-            </NavigationMenuLink>
+          <Link
+            href="https://artistjodi.com"
+            className={navigationMenuTriggerClassName()}
+          >
+            AJ Home
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#collection" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerClassName()}>
-              Collection
-            </NavigationMenuLink>
+          <Link
+            href="/#collection"
+            className={navigationMenuTriggerClassName()}
+          >
+            Collection
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
