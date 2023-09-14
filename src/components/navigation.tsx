@@ -25,6 +25,7 @@ export const Navigation = () => {
         <NavigationMenuItem>
           <Link
             href={{ pathname: "/", hash: "collection" }}
+            as={{ pathname: "/", hash: "collection" }}
             className={navigationMenuTriggerClassName()}
           >
             Collection
