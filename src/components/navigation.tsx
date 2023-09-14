@@ -23,7 +23,10 @@ export const Navigation = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#collection" className={navigationMenuTriggerClassName()}>
+          <Link
+            href="/#collection"
+            className={navigationMenuTriggerClassName()}
+          >
             Collection
           </Link>
         </NavigationMenuItem>
