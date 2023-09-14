@@ -23,11 +23,7 @@ export const Navigation = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link
-            href={{ pathname: "/", hash: "collection" }}
-            as={{ pathname: "/", hash: "collection" }}
-            className={navigationMenuTriggerClassName()}
-          >
+          <Link href="#collection" className={navigationMenuTriggerClassName()}>
             Collection
           </Link>
         </NavigationMenuItem>

@@ -53,3 +53,8 @@
     @apply px-4 sm:px-4 md:px-20 lg:px-36 xl:px-48 2xl:px-80;
   }
 }
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
