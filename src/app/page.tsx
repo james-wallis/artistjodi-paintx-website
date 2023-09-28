@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Blockchain } from "@/components/blockchain";
+import { Carousel } from "@/components/carousel";
 import { GoToTopButton } from "@/components/go-to-top-button";
 import { ScrollToIdButton } from "@/components/scrollToIdButton";
 
@@ -46,16 +47,7 @@ export default function Home() {
           <p>A fusion of creativity and cutting-edge technology.</p>
           <p>Embrace the Future of Art & NFTs.</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-8 text-base">
-          {ART_ITEMS.slice(0, 4).map(({ images, name, slug }) => (
-            <div key={slug} className="relative">
-              <Link href={`/${slug}`}>
-                <Image src={images.main} alt={name} width={300} height={300} />
-              </Link>
-            </div>
-          ))}
-        </div>
-        {/* <Carousel /> */}
+        <Carousel />
         <div className="flex w-full flex-col md:flex-row items-center justify-between mb-4 mt-8 md:items-end gap-y-4 md:gap-y-0">
           <div className="uppercase text-center md:text-left flex flex-col ">
             <p>PaintX NFT Genesis Collection</p>
