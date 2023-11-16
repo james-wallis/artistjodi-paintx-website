@@ -51,12 +51,14 @@ export default function Home() {
         <div className="flex w-full flex-col md:flex-row items-center justify-between mb-4 mt-8 md:items-end gap-y-4 md:gap-y-0">
           <div className="uppercase text-center md:text-left flex flex-col ">
             <p>PaintX NFT Genesis Collection</p>
-            <p>Launching 1st Oct 2023</p>
+            <p>Launching 19 Nov 2023</p>
           </div>
           <ScrollToIdButton id="collection">Collection</ScrollToIdButton>
         </div>
         <div className="mt-4 mb-8 self-start flex flex-col-reverse md:flex-row gap-y-4 md:gap-y-0 items-center md:justify-between w-full">
-          <button className="btn">Next drop waitlist</button>
+          <a className="btn" href="mailto:jodi@artistjodi.co.uk">
+            Email me
+          </a>
           <p>24 x 1/1</p>
         </div>
       </section>
@@ -292,11 +294,11 @@ export default function Home() {
                 <Image src={images.main} alt={name} width={300} height={300} />
               </Link>
               <div className="absolute flex-col bottom-0 left-0 right-0 flex justify-center items-center">
-                <p className="mb-16 font-normal text-white">{name}</p>
+                <p className="mb-3 font-normal text-white">{name}</p>
                 <a
                   href={href}
                   target="_blank"
-                  className="btn w-3/4"
+                  className="btn w-3/4 mb-6 sm:mb-2 2xl:mb-8"
                   rel="noopener noreferrer"
                 >
                   Buy

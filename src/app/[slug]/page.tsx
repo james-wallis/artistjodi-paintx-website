@@ -11,7 +11,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     notFound();
   }
 
-  const { name, images, description, id } = item;
+  const { name, images, description, id, href } = item;
 
   return (
     <main className="max-w-2xl mx-auto mb-10 mt-16 md:mt-6 relative overflow-x-hidden">
@@ -69,6 +69,16 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
           <p>3D Digital twins metaverse and AR Ready</p>
         </div>
+      </section>
+      <section className="my-10 md:my-12 flex justify-center items-center h-full">
+        <a
+          href={href}
+          target="_blank"
+          className="btn w-52 mt-4"
+          rel="noopener noreferrer"
+        >
+          Buy on OpenSea
+        </a>
       </section>
       <section className="text-center my-10 md:my-12 text-sm px-2 md:px-0">
         <p>{`"${name}" original work was painted June 2023 by ArtistJodi in the
