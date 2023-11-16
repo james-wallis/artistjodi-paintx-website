@@ -102,6 +102,7 @@ interface ArtItem {
   name: string;
   description: string;
   id: number;
+  href: string;
   images: {
     main: StaticImageData;
     other1: StaticImageData;
@@ -123,6 +124,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: ChromaBurst3,
       other3: ChromaBurst4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/3",
   },
   {
     name: "Red Horizon",
@@ -136,6 +138,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: RedHorizon3,
       other3: RedHorizon4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/1",
   },
   {
     name: "Ember Glimmer",
@@ -149,6 +152,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: EmberGlimmer3,
       other3: EmberGlimmer4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/18",
   },
   {
     name: "Cave View",
@@ -162,6 +166,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: CaveView3,
       other3: CaveView4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/16",
   },
   {
     name: "Drifts of Amethyst",
@@ -175,6 +180,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: DriftsOfAmethyst3,
       other3: DriftsOfAmethyst4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/2",
   },
   {
     name: "Tactile Serenity",
@@ -188,6 +194,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: TactileSerenity3,
       other3: TactileSerenity4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/14",
   },
   {
     name: "Sunset Journey",
@@ -201,6 +208,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: GoldenJourney3,
       other3: GoldenJourney4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/15",
   },
   {
     name: "Green Journey",
@@ -214,6 +222,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: GreenJourney3,
       other3: GreenJourney4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/4",
   },
   {
     name: "Blue Bay",
@@ -227,6 +236,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: BlueBay3,
       other3: BlueBay4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/19",
   },
   {
     name: "Opensea",
@@ -240,6 +250,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Opensea3,
       other3: Opensea4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/20",
   },
   {
     name: "Shoreline Impasto",
@@ -253,6 +264,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: ShorelineImpasto3,
       other3: ShorelineImpasto4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/8",
   },
   {
     name: "Flowing Sandscape",
@@ -266,6 +278,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: FlowingSandscape3,
       other3: FlowingSandscape4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/17",
   },
   {
     name: "Brown Bay",
@@ -279,6 +292,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: BrownBay3,
       other3: BrownBay4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/5",
   },
   {
     name: "Bitcoin #1",
@@ -292,6 +306,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Bitcoin13,
       other3: Bitcoin14,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/23",
   },
   {
     name: "Bitcoin #2",
@@ -305,6 +320,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Bitcoin23,
       other3: Bitcoin24,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/22",
   },
   {
     name: "Ethereum",
@@ -318,6 +334,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Ethereum3,
       other3: Ethereum4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/21",
   },
   {
     name: "Blush of Humanity",
@@ -331,6 +348,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Blush3,
       other3: Blush4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/9",
   },
   {
     name: "Blockchain",
@@ -344,6 +362,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Blockchain3,
       other3: Blockchain4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/10",
   },
   {
     name: "Technicolour",
@@ -357,6 +376,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Technicolour3,
       other3: Technicolour4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/12",
   },
   {
     name: "Iridescent Inception",
@@ -370,6 +390,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Irrid3,
       other3: Irrid4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/13",
   },
   {
     name: "Inner Core",
@@ -383,6 +404,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: InnerCore3,
       other3: InnerCore4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/24",
   },
   {
     name: "Concrete Metropolis",
@@ -396,6 +418,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Concrete3,
       other3: Concrete4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/11",
   },
   {
     name: "Nodes",
@@ -409,6 +432,7 @@ export const ART_ITEMS: ArtItem[] = [
       other2: Nodes3,
       other3: Nodes4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/6",
   },
   {
     name: "Swirling Iridescence",
@@ -422,5 +446,6 @@ export const ART_ITEMS: ArtItem[] = [
       other2: SWIRL3,
       other3: SWIRL4,
     },
+    href: "https://opensea.io/assets/ethereum/0x81abc327dccc78b883240eacc31600689ff464f3/7",
   },
 ];

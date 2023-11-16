@@ -286,14 +286,21 @@ export default function Home() {
           className="my-20 mx-auto"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-          {ART_ITEMS.map(({ images, name, slug }) => (
+          {ART_ITEMS.map(({ images, name, slug, href }) => (
             <div key={slug} className="relative">
               <Link href={`/${slug}`}>
                 <Image src={images.main} alt={name} width={300} height={300} />
               </Link>
               <div className="absolute flex-col bottom-0 left-0 right-0 flex justify-center items-center">
                 <p className="mb-16 font-normal text-white">{name}</p>
-                {/* <button className="btn w-3/4">Buy</button> */}
+                <a
+                  href={href}
+                  target="_blank"
+                  className="btn w-3/4"
+                  rel="noopener noreferrer"
+                >
+                  Buy
+                </a>
               </div>
             </div>
           ))}
