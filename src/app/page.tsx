@@ -110,8 +110,7 @@ export default function Home() {
         </div>
 
         <h3 className="font-medium text-xl mb-2 mt-20">
-          With 1/1 digital assets included in the box and via download from
-          secure link
+          With 1/1 digital assets included in the box
         </h3>
         <p className="mb-8">
           The 3D models can be used in the metaverse and beyond
@@ -232,7 +231,7 @@ export default function Home() {
             <p className="text-lg font-medium">ArtistJodi</p>
             <div className="max-w-md flex flex-col text-center md:text-left">
               <p>
-                Meet the artist behind the PaintX Genisis Collection. Each piece
+                Meet the artist behind the PaintX Genesis Collection. Each piece
                 tells a story, evoking emotion and imagination. With a style
                 ranging from smooth to heavily textured, digital and physical,
                 no two ArtistJodi pieces are the same.
